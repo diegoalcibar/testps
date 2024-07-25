@@ -1,0 +1,25 @@
+<p>list works!</p>
+
+<td><a href="/create/">Crear Resgistro</a></td>
+
+
+<table class="w3-table w3-striped">
+    <thead>
+        <th>Id</th>
+        <th>Tittle</th>
+        <th>Body</th>
+        <th>UserId</th>
+        <th>Editar</th>
+        <th>Eliminar</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of listado">
+            <td>{{item.id}}</td>
+            <td>{{item.title}}</td>
+            <td>{{item.body}}</td>
+            <td>{{item.userId}}</td>
+            <td><a href="/edit/{{item.id}}">Editar</a></td>
+            <td><a href="/delete/{{item.id}}">Eliminar</a></td>
+        </tr>
+    </tbody>
+</table>

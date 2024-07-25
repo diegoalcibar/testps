@@ -1,0 +1,35 @@
+<p>Eliminar Registro</p>
+
+<form [formGroup]="registroForm" (submit)="eliminarRegistro()">
+    <div class="form-group">
+        <label for="Id">Id</label>
+        <input 
+             type="text" 
+             name="id" 
+             formControlName ="id" readonly >
+     </div>
+    <div class="form-group">
+       <label for="title">title</label>
+       <input 
+            type="text" 
+            name="title" 
+            formControlName ="title" readonly >
+    </div>
+
+    <div class="form-group">
+        <label for="body">Body</label>
+        <input 
+             type="area" 
+             name="body" 
+             formControlName ="body" readonly >
+     </div>
+
+     <div class="form-group">
+        <label for="userId">Usero Id</label>
+        <input 
+             type="text" 
+             name="userId" 
+             formControlName ="userId" readonly >
+     </div>
+    <button type="submit" class="btn btn-default">Eliminar</button>
+ </form>
